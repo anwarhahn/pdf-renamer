@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pdf_renamer"
+version = "0.1.0"
+description = "Use LLMs to rename pdfs"
+authors = ["Anwar Hahn <ahahn@cs.stanford.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pypdf = "^5.3.0"
+langchain = "^0.3.18"
+langchain-ollama = "^0.2.3"
+langchain-community = "^0.3.17"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+ruff = "^0.9.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
